@@ -1,0 +1,14 @@
+C:\Users\Hosam\Desktop\ConsoleAppTraining\bin\Debug\net10.0\ConsoleAppTraining.exe
+C:\Users\Hosam\Desktop\ConsoleAppTraining\bin\Debug\net10.0\ConsoleAppTraining.deps.json
+C:\Users\Hosam\Desktop\ConsoleAppTraining\bin\Debug\net10.0\ConsoleAppTraining.runtimeconfig.json
+C:\Users\Hosam\Desktop\ConsoleAppTraining\bin\Debug\net10.0\ConsoleAppTraining.dll
+C:\Users\Hosam\Desktop\ConsoleAppTraining\bin\Debug\net10.0\ConsoleAppTraining.pdb
+C:\Users\Hosam\Desktop\ConsoleAppTraining\obj\Debug\net10.0\ConsoleAppTraining.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hosam\Desktop\ConsoleAppTraining\obj\Debug\net10.0\ConsoleAppTraining.AssemblyInfoInputs.cache
+C:\Users\Hosam\Desktop\ConsoleAppTraining\obj\Debug\net10.0\ConsoleAppTraining.AssemblyInfo.cs
+C:\Users\Hosam\Desktop\ConsoleAppTraining\obj\Debug\net10.0\ConsoleAppTraining.csproj.CoreCompileInputs.cache
+C:\Users\Hosam\Desktop\ConsoleAppTraining\obj\Debug\net10.0\ConsoleAppTraining.dll
+C:\Users\Hosam\Desktop\ConsoleAppTraining\obj\Debug\net10.0\refint\ConsoleAppTraining.dll
+C:\Users\Hosam\Desktop\ConsoleAppTraining\obj\Debug\net10.0\ConsoleAppTraining.pdb
+C:\Users\Hosam\Desktop\ConsoleAppTraining\obj\Debug\net10.0\ConsoleAppTraining.genruntimeconfig.cache
+C:\Users\Hosam\Desktop\ConsoleAppTraining\obj\Debug\net10.0\ref\ConsoleAppTraining.dll
