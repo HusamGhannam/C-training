@@ -13,7 +13,7 @@ namespace Presentation
         private readonly StatisticsService _statisticsService;
         private readonly AddCarService _addCarService;
         private readonly ShowAvailableCarsService _showAvailableCarsService;
-        private readonly TestData _seedData;
+        private readonly TestData _myData;
 
         public Menu(
             CarDisplayService carDisplayService,
@@ -24,7 +24,7 @@ namespace Presentation
             StatisticsService statisticsService,
             AddCarService addCarService,
             ShowAvailableCarsService showAvailableCarsService,
-            TestData seedData)
+            TestData myData)
         {
             _carDisplayService = carDisplayService;
             _customerDisplayService = customerDisplayService;
@@ -34,7 +34,7 @@ namespace Presentation
             _statisticsService = statisticsService;
             _addCarService = addCarService;
             _showAvailableCarsService = showAvailableCarsService;
-            _seedData = seedData;
+            _myData = myData;
         }
 
         public async Task StartAsync()
@@ -78,8 +78,8 @@ namespace Presentation
 
         private async Task TestDataAsync()
         {
-            await _seedData.SeedAllAsync();
-            Console.WriteLine("Seed data added.\n");
+            await _myData.AddTestDataAsync();
+            Console.WriteLine("Test data added.\n");
         }
 
         private async Task SellCarAsync()
@@ -227,13 +227,14 @@ namespace Presentation
 
             Console.Write("Enter color: ");
             var color = Console.ReadLine();
-            if (string.IsNullOrWhiteSpace(color))
+            if (color == null || color == "")
             {
                 Console.WriteLine("Color cannot be empty.");
                 return;
             }
 
             Console.Write("Enter year: ");
+            
             if (!int.TryParse(Console.ReadLine(), out var year))
             {
                 Console.WriteLine("Invalid year.");
@@ -250,7 +251,7 @@ namespace Presentation
             try
             {
                 var car = await _addCarService.AddCarAsync(brand, model, color, year, price);
-                Console.WriteLine($"Car added successfully with ID: {car.ID}");
+                Console.WriteLine("Car added successfully");
             }
             catch (Exception ex)
             {
@@ -320,7 +321,7 @@ namespace Presentation
             Console.WriteLine("===== Statistics =====\n");
 
             var headFromStats = await _statisticsService.GetHeadFromStatsAsync();
-            Console.WriteLine("--- Customers by Marketing Source ---");
+            Console.WriteLine("===Customers by Marketing Source ===");
             if (headFromStats.Count == 0)
             {
                 Console.WriteLine("  No customer data available.");
@@ -331,7 +332,7 @@ namespace Presentation
                     Console.WriteLine($"  {s.Source,-15} {s.Count}");
             }
 
-            Console.WriteLine("\n--- Most Sold Cars ---");
+            Console.WriteLine("\n===Most Sold Cars ===");
             var stats2 = await _statisticsService.GetMostSoldCarsAsync();
             if (stats2.Count == 0)
             {
@@ -343,7 +344,7 @@ namespace Presentation
                     Console.WriteLine($"  {x.Brand} {x.Model,-9} {x.Count} sold");
             }
 
-            Console.WriteLine("\n--- Top Sellers ---");
+            Console.WriteLine("\n=== Top Sellers ===");
             var sellerStats = await _statisticsService.GetTopSellersAsync();
             if (sellerStats.Count == 0)
             {
@@ -352,7 +353,7 @@ namespace Presentation
             else
             {
                 foreach (var s in sellerStats)
-                    Console.WriteLine($"  {s.Name,-15} {s.CarsSold} cars sold");
+                    Console.WriteLine($"  {s.Name},  {s.CarsSold} cars sold");
             }
         }
     }

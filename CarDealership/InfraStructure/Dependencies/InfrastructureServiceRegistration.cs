@@ -4,7 +4,7 @@ using Domain.InProgramData;
 using InfraStructure.Persistence.Context;
 using InfraStructure.Persistence.Repositories;
 
-namespace InfraStructure.DependencyInjection
+namespace InfraStructure.Dependencies
 {
     public static class InfrastructureServiceRegistration
     {

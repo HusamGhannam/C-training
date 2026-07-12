@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0ILcb6QGYng=",
+  "dgSpecHash": "JOD74CT1dH4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Hosam\\Desktop\\C# training proj\\CarAutoDDD\\ConsoleApp1\\ConsoleApp1.csproj",
+  "projectFilePath": "C:\\Users\\Hosam\\Desktop\\C# training proj\\CarAutoDDD\\CarDealership\\ConsoleApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hosam\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Hosam\\.nuget\\packages\\microsoft.build.framework\\18.0.2\\microsoft.build.framework.18.0.2.nupkg.sha512",

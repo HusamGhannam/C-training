@@ -2661,11 +2661,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hosam\\Desktop\\C# training proj\\CarAutoDDD\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectUniqueName": "C:\\Users\\Hosam\\Desktop\\C# training proj\\CarAutoDDD\\CarDealership\\ConsoleApp1.csproj",
       "projectName": "ConsoleApp1",
-      "projectPath": "C:\\Users\\Hosam\\Desktop\\C# training proj\\CarAutoDDD\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectPath": "C:\\Users\\Hosam\\Desktop\\C# training proj\\CarAutoDDD\\CarDealership\\ConsoleApp1.csproj",
       "packagesPath": "C:\\Users\\Hosam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hosam\\Desktop\\C# training proj\\CarAutoDDD\\ConsoleApp1\\obj\\",
+      "outputPath": "C:\\Users\\Hosam\\Desktop\\C# training proj\\CarAutoDDD\\CarDealership\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Hosam\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -16,14 +16,14 @@ namespace Application.Services
             _sellerRepo = sellerRepo;
         }
 
-        public async Task SeedAllAsync()
+        public async Task AddTestDataAsync()
         {
-            await SeedCarsAsync();
-            await SeedSellersAsync();
-            await SeedCustomersAsync();
+            await DataCarsAsync();
+            await DataSellersAsync();
+            await DataCustomersAsync();
         }
 
-        private async Task SeedCarsAsync()
+        private async Task DataCarsAsync()
         {
             var cars = await _carRepo.GetAllAsync();
             if (cars.Any()) return;
@@ -33,7 +33,7 @@ namespace Application.Services
             await _carRepo.AddAsync(new Car { ID = 3, Brand = "Ford", Model = "Focus", Color = "Red", Year = 2021, Price = 15000, Status = "Available" });
         }
 
-        private async Task SeedSellersAsync()
+        private async Task DataSellersAsync()
         {
             var sellers = await _sellerRepo.GetAllAsync();
             if (sellers.Any()) return;
@@ -42,7 +42,7 @@ namespace Application.Services
             await _sellerRepo.AddAsync(new Seller { ID = 2, Name = "Lara", City = "Aleppo", CarsSold = 0 });
         }
 
-        private async Task SeedCustomersAsync()
+        private async Task DataCustomersAsync()
         {
             var customers = await _customerRepo.GetAllAsync();
             if (customers.Any()) return;
